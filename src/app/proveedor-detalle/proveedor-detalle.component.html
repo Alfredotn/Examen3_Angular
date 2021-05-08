@@ -10,6 +10,11 @@
     <div>
       <label for="proveedor-id">Id Proveedor: </label>
       <input id="proveedor-id" [(ngModel)]="proveedor.id" placeholder="id">
-    </div>   
+    </div>  
+    <mat-card>
+    <button class="add-button" (click)="Actualizar(proveedorName.value, proveedorId.value ); proveedorName.value=''; proveedorId.value=''  " >
+      Actualizar proveedor
+    </button>
+  </mat-card> 
 </div>
 
